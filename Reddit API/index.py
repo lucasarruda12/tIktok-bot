@@ -1,8 +1,8 @@
 import praw
 
 reddit = praw.Reddit(
-    client_id = "6UJQEOK_UhVkuhxrzdykVg", 
-    client_secret = "49yxZCobgHWaD7W9UuZveZSCrSRS6Q", 
+    client_id = "", 
+    client_secret = "", 
     username ="", 
     password = "", 
     user_agent = "teste"
