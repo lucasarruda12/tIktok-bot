@@ -15,7 +15,7 @@ reddit = praw.Reddit(
     user_agent = user_agent
 )
 
-top = reddit.subreddit("desabafos").hot(limit = 1)
+top = reddit.subreddit("desabafos").hot(limit = 3)
 
 # SET UP TEXT-TO-SPEAK
 print('[TEXT-TO-SPEAK] Setting up text-to-speak...')
@@ -45,7 +45,7 @@ for submission in top:
     texto = str(submission.title + submission.selftext)
     if(len(texto) < 1115):
 
-        print('[TEXT-TO-SPEAK] Creating audio file ['+ submission.id+']...')
+        print('[TEXT-TO-SPEAK] Creating audio file ['+ submission.title+']...')
         engine.save_to_file(texto, os.path.join('temp', str(id)+".mp3"))
         engine.runAndWait()
 
