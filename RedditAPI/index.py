@@ -22,7 +22,7 @@ print('[TEXT-TO-SPEAK] Setting up text-to-speak...')
 engine = pyttsx3.init()
 
 rate = engine.getProperty('rate')                
-engine.setProperty('rate', 350) 
+engine.setProperty('rate', 275) 
 
 # SET UP POST SCREENSHOT
 def capture(url: str, id:int) -> None:
